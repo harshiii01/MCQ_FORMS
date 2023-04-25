@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MCQ Example</title>
+    
+</head>
+<body>
+
+    <h1>Multiple Choice Question</h1>
+
+    <form>
+        
+            <legend>Question 1:</legend>
+            <p>Which of the following can read and render HTML web pages</p>
+
+            <label>
+                <input type="radio" name="q1" value="a" />
+                a) server
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="b" />
+                b) Web browser
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="c" />
+                c) head task
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="d" />
+                d) empty
+            </label><br />
+            <br />
+            <button type="button" onclick="check1()">Submit</button>
+            <br />
+            <br />
+            <legend>Question 2:</legend>
+            <p>Which of the following JavaScript cannot do?</p>
+
+            <label>
+                <input type="radio" name="q1" value="a" />
+                a) JavaScript can react to events
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="b" />
+                b) JavaScript can manipulate HTML elements
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="c" />
+                c)JavaScript can be use to validate data
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="d" />
+                d) All of the Above
+            </label><br />
+            <br />
+            <button type="button" onclick="check2()">Submit</button>
+            <br />
+            <br />
+            <legend>Question 3:</legend>
+            <p>Whats so great about XML?</p>
+
+            <label>
+                <input type="radio" name="q1" value="a" />
+                a) Easy data exchange
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="b" />
+                b)High speed on network
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="c" />
+                c) Only B.is correct
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="d" />
+                d) Both A & B
+            </label>
+            <br />
+            <br />
+            <button type="button" onclick="check3()">Submit</button>
+             <br>
+             <br>
+            <legend>Question 4:</legend>
+            <p>Which is not a property of attribute Behaviour of Marquee tag?</p>
+
+            <label>
+                <input type="radio" name="q1" value="a" />
+                a) alternate
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="b" />
+                b) blur
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="c" />
+                c) scroll
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="d" />
+                d) slide
+            </label><br />
+            <br />
+            <button type="button" onclick="check4()">Submit</button>
+            <br />
+            <br />
+            <legend>Question 5:</legend>
+            <p>The attribute used to fine a new namespace is </p>
+
+            <label>
+                <input type="radio" name="q1" value="a" />
+                a) XMLNS
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="b" />
+                b) XmlNameSpace
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="c" />
+                c) Xmlns
+            </label><br />
+
+            <label>
+                <input type="radio" name="q1" value="d" />
+                d) XmlNs
+            </label>
+            <br />
+            <br />
+            <button type="button" onclick="check5()">Submit</button>
+            <br />
+            <br />
+            <p>Correct answers: <span id="count"></span></p>
+    </form>
+    <script>
+        var count=0;var l=0;
+        function check1() {
+            var correctAnswer = "b"; 
+            var selectedAnswer = document.querySelector('input[name="q1"]:checked').value; // the selected answer
+            
+            if (selectedAnswer === correctAnswer) {
+                l=1;
+            } else {
+                alert("Incorrect!"); // give zero points
+            }
+            if(l==1)
+            {
+            count++;
+            l=0;
+            }
+            document.getElementById("count").innerHTML = count;
+        }
+        function check2() {
+            var correctAnswer = "c"; 
+            var selectedAnswer = document.querySelector('input[name="q1"]:checked').value; // the selected answer
+            
+            if (selectedAnswer === correctAnswer) {
+                l=1;
+            } else {
+                alert("Incorrect!"); // give zero points
+            }
+            if(l==1)
+            {
+            count++;
+            l=0;
+            }
+            document.getElementById("count").innerHTML = count;
+        }
+        function check3() {
+            var correctAnswer = "d"; 
+            var selectedAnswer = document.querySelector('input[name="q1"]:checked').value; // the selected answer
+            
+            if (selectedAnswer === correctAnswer) {
+                l=1;
+            } else {
+                alert("Incorrect!"); // give zero points
+            }
+            if(l==1)
+            {
+            count++;
+            l=0;
+            }
+            document.getElementById("count").innerHTML = count;
+        }
+        function check4() {
+            var correctAnswer = "a"; 
+            var selectedAnswer = document.querySelector('input[name="q1"]:checked').value; // the selected answer
+            
+            if (selectedAnswer === correctAnswer) {
+                l=1;
+            } else {
+                alert("Incorrect!"); // give zero points
+            }
+            if(l==1)
+            {
+            count++;
+            l=0;
+            }
+            document.getElementById("count").innerHTML = count;
+        }
+        function check5() {
+            var correctAnswer = "b"; 
+            var selectedAnswer = document.querySelector('input[name="q1"]:checked').value; // the selected answer
+            
+            if (selectedAnswer === correctAnswer) {
+                l=1;
+                
+            } else {
+                alert("Incorrect!"); // give zero points
+            
+            }
+            if(l==1)
+            {
+            count++;
+            l=0;
+            }
+            document.getElementById("count").innerHTML = count;
+        }
+        </script>
+
+</body>
+</html>
